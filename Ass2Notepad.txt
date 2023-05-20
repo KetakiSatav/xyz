@@ -117,6 +117,25 @@ class ReverseServer
 }
 
 
+ReverseModule.idl:
+module ReverseModule
+{
+    interface Reverse
+    {
+        string reverse_string(in string str);
+    };
+};
+
+
+Ass 2: Run Command
+1. ls
+2. idlj -fall ReversModule.idl
+3. javac *.java ReverseModule/*.java
+4. java ReverseServer -ORBInitialPort 1050& -ORBInitialHost loacalhost& 
+
+In New Terminal
+5. java ReverseClient -ORBInitialPort 1050 -ORBInitialHost lcalhost
+
 
 
     String Reverse using corba , idl and java implementation : 
