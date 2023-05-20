@@ -60,6 +60,15 @@ double add(double d1, double d2) throws RemoteException;
 }
 
 
+Ass1 command:
+
+1 . ls
+2 . javac *.java
+3 . rmic AddServerImpl
+4 . Copy AddClient.class, AddServerImpl_Stub.class, and AddServerIntf.class to a directory on 	the client machine.
+5 . Copy AddServerIntf.class, AddServerImpl.class, AddServerImpl_ Stub.class, and AddServer.class to a directory on the server machine.
+6 . open terminal in server folder : java AddServer
+7 . open terminal in client folder : java AddClient 127.0.0.1 8 8 
 
 Rmi implementation steps :
 
